@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: blackColor,
         useMaterial3: true,
       ),
-      initialRoute: AppRoutes.HOME,
+      initialRoute: AppRoutes.BOTTOMNAVBAR,
       getPages: AppRoutes.routes,
     );
   }
