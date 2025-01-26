@@ -1,3 +1,4 @@
+import 'package:UIPtv/core/app_colors.dart';
 import 'package:UIPtv/core/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'UIPtv',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: blackColor,
         useMaterial3: true,
       ),
       initialRoute: AppRoutes.HOME,
