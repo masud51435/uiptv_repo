@@ -1,6 +1,7 @@
 import 'package:UIPtv/core/app_colors.dart';
 import 'package:UIPtv/feature/home_page/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 class PbottomNavbar extends StatefulWidget {
@@ -33,11 +34,13 @@ class _PbottomNavbarState extends State<PbottomNavbar> {
     return [
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.home),
+        inactiveIcon: const Icon(Icons.home_outlined),
         activeColorPrimary: selectedButtonColor,
         inactiveColorPrimary: greyColor,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.monitor),
+        icon: const Icon(Iconsax.monitor5),
+        inactiveIcon: const Icon(Icons.monitor_outlined),
         activeColorPrimary: selectedButtonColor,
         inactiveColorPrimary: greyColor,
       ),
@@ -47,7 +50,8 @@ class _PbottomNavbarState extends State<PbottomNavbar> {
         inactiveColorPrimary: greyColor,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.person_outline),
+        icon: const Icon(Icons.person),
+        inactiveIcon: const Icon(Icons.person_outline),
         activeColorPrimary: selectedButtonColor,
         inactiveColorPrimary: greyColor,
       ),
@@ -70,6 +74,7 @@ class _PbottomNavbarState extends State<PbottomNavbar> {
       decoration: NavBarDecoration(
         borderRadius: BorderRadius.circular(40),
       ),
+      resizeToAvoidBottomInset: true,
     );
   }
 }
